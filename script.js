@@ -61,7 +61,7 @@ sendBtn.onclick = () => {
 // === ПОДКЛЮЧЕНИЕ К СИГНАЛЬНОМУ СЕРВЕРУ ===
 function connectSignaling(roomId) {
     // сюда вставь адрес своего бесплатного сервера (Heroku/Render)
-    ws = new WebSocket("wss://YOUR-FREE-SIGNAL-SERVER-APP.herokuapp.com/" + roomId);
+    ws = new WebSocket("wss://webrtc-signal-server-5lru.onrender.com/" + roomId);
 
     ws.onopen = () => {
         log("Подключились к комнате: " + roomId);
